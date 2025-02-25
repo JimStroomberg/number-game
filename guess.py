@@ -1,9 +1,10 @@
 import random
 
 def guess_the_number():
-    number = random.randint(0, 100)
+    upperlimit = int(input("Number between 1 and: "))
+    number = random.randint(1, upperlimit)
     attempts = 0
-    print("Guess the number between 1 and 100")
+    print(f"Guess the number between 1 and {upperlimit}")
 
     while True:
         try:
